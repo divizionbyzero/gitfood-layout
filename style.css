@@ -1,4 +1,4 @@
-.box-shadow, .gf-button--green:hover, .gf-button--blue:hover, .gf-user-img, .gf-form {
+.box-shadow, .gf-button--green:hover, .gf-button--blue:hover, .gf-badge, .gf-user-img, .gf-form, .gf-pull {
   box-shadow: 7px 7px 0px rgba(85, 85, 85, 0.025); }
 
 ::-webkit-input-placeholder {
@@ -223,53 +223,6 @@ a {
   max-width: 1000px;
   margin: 40px auto 0; }
 
-.pool-info {
-  padding: 10px 15px;
-  background-color: #FEFEFE;
-  margin: 10px 0;
-  border-radius: 2px;
-  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
-  border: 1px solid #D7D7D7;
-  opacity: .9; }
-
-.pool-info .octicon {
-  font-size: 20px;
-  color: #C6C5B9;
-  margin-right: 9px;
-  vertical-align: text-top; }
-
-.p-time {
-  font-size: 20px;
-  color: #69A644;
-  opacity: .7; }
-
-.p-shop-name {
-  display: inline-block;
-  width: 15%;
-  margin-left: 40px;
-  min-width: 100px;
-  color: #6A95B0;
-  font-size: 17px;
-  text-transform: uppercase;
-  margin-right: 11px; }
-
-.p-author {
-  display: inline-block;
-  width: 40%; }
-
-.p-peoples {
-  float: right;
-  color: #69A644;
-  line-height: 22px;
-  font-weight: bold;
-  opacity: .7; }
-
-.pools-date {
-  font-size: 20px;
-  margin-top: 20px;
-  opacity: .8;
-  color: #282828; }
-
 .rel {
   position: relative; }
 
@@ -387,8 +340,7 @@ a {
   letter-spacing: 0;
   margin-left: 5px;
   vertical-align: bottom;
-  opacity: .7;
-  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3); }
+  opacity: .7; }
 .gf-user-img {
   width: 30px;
   height: 30px;
@@ -675,5 +627,44 @@ a {
     vertical-align: baseline !important; }
   .gf-debts_btn:hover span {
     color: #282828 !important; }
+.gf-pulls_date {
+  font-size: 20px;
+  margin-top: 20px;
+  opacity: .8;
+  color: #282828; }
+.gf-pull {
+  padding: 10px 15px;
+  background-color: #FEFEFE;
+  margin: 10px 0;
+  border-radius: 2px;
+  border: 1px solid #D7D7D7;
+  opacity: .9; }
+  .gf-pull_time {
+    font-size: 20px;
+    color: #69A644;
+    opacity: .7; }
+  .gf-pull_shop-name {
+    display: inline-block;
+    width: 15%;
+    margin-left: 40px;
+    min-width: 100px;
+    color: #6A95B0;
+    font-size: 17px;
+    text-transform: uppercase;
+    margin-right: 11px; }
+  .gf-pull_author {
+    display: inline-block;
+    width: 40%; }
+  .gf-pull_peoples {
+    float: right;
+    color: #69A644;
+    line-height: 22px;
+    font-weight: bold;
+    opacity: .7; }
+  .gf-pull .octicon {
+    font-size: 20px;
+    color: #C6C5B9;
+    margin-right: 9px;
+    vertical-align: text-top; }
 
 /*# sourceMappingURL=style.css.map */

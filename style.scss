@@ -269,59 +269,6 @@ a {
   max-width: 1000px;
   margin: 40px auto 0; }
 
-.pool-info {
-  padding: 10px 15px;
-  background-color: $color_white;
-  margin: 10px 0;
-  border-radius: 2px;
-  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
-  border: 1px solid #D7D7D7;
-  opacity: .9;
-}
-
-.pool-info .octicon {
-  font-size: 20px;
-  color: #C6C5B9;
-  margin-right: 9px;
-  vertical-align: text-top;
-}
-
-.p-time {
-  font-size: 20px;
-  color: $color_main_green;
-  opacity: .7;
-}
-
-.p-shop-name {
-  display: inline-block;
-  width: 15%;
-  margin-left: 40px;
-  min-width: 100px;
-  color: #6A95B0;
-  font-size: 17px;
-  text-transform: uppercase;
-  margin-right: 11px;
-}
-
-.p-author {
-  display: inline-block;
-  width: 40%; }
-
-.p-peoples {
-  float: right;
-  color: $color_main_green;
-  line-height: 22px;
-  font-weight: bold;
-  opacity: .7;
-}
-
-.pools-date {
-  font-size: 20px;
-  margin-top: 20px;
-  opacity: .8;
-  color: #282828;
-}
-
 .rel {
   position: relative;
 }
@@ -470,7 +417,7 @@ a {
     margin-left: 5px;
     vertical-align: bottom;
     opacity: .7;
-    box-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+    @extend .box-shadow;
   }
 
   &user-img {
@@ -815,6 +762,56 @@ a {
           color: #282828 !important;
         }
       }
+    }
+  }
+  &pulls {
+    &_date {
+      font-size: 20px;
+      margin-top: 20px;
+      opacity: .8;
+      color: #282828;
+    }
+
+  }
+  &pull {
+    padding: 10px 15px;
+    background-color: $color_white;
+    margin: 10px 0;
+    border-radius: 2px;
+    @extend .box-shadow;
+    border: 1px solid #D7D7D7;
+    opacity: .9;
+    &_time {
+      font-size: 20px;
+      color: $color_main_green;
+      opacity: .7;
+    }
+    &_shop-name {
+      display: inline-block;
+      width: 15%;
+      margin-left: 40px;
+      min-width: 100px;
+      color: #6A95B0;
+      font-size: 17px;
+      text-transform: uppercase;
+      margin-right: 11px;
+    }
+    &_author {
+      display: inline-block;
+      width: 40%;
+    }
+    &_peoples {
+      float: right;
+      color: $color_main_green;
+      line-height: 22px;
+      font-weight: bold;
+      opacity: .7;
+    }
+    .octicon {
+      font-size: 20px;
+      color: #C6C5B9;
+      margin-right: 9px;
+      vertical-align: text-top;
     }
   }
 }
